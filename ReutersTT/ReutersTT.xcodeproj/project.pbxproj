@@ -15,6 +15,7 @@
 		D07342FA2328DBC20080D83E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07342F82328DBC20080D83E /* LaunchScreen.storyboard */; };
 		D07343052328DBC20080D83E /* ReutersTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07343042328DBC20080D83E /* ReutersTTTests.swift */; };
 		D07343122328F07B0080D83E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07343112328F07B0080D83E /* MainTabBarController.swift */; };
+		D0734315232903050080D83E /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0734314232903050080D83E /* UserInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		D07343042328DBC20080D83E /* ReutersTTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReutersTTTests.swift; sourceTree = "<group>"; };
 		D07343062328DBC20080D83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D07343112328F07B0080D83E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		D0734314232903050080D83E /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfoModel.swift; path = Models/UserInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				D07342F62328DBC20080D83E /* Assets.xcassets */,
 				D07342F82328DBC20080D83E /* LaunchScreen.storyboard */,
 				D07342FB2328DBC20080D83E /* Info.plist */,
+				D0734314232903050080D83E /* UserInfoModel.swift */,
 			);
 			path = ReutersTT;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				D07342EE2328DBBE0080D83E /* AppDelegate.swift in Sources */,
 				D07343122328F07B0080D83E /* MainTabBarController.swift in Sources */,
 				D07342F02328DBBE0080D83E /* FirstViewController.swift in Sources */,
+				D0734315232903050080D83E /* UserInfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
