@@ -13,6 +13,11 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        view.backgroundColor = UIColor.red
+        self.title = "Tab 2"
     }
 
 
