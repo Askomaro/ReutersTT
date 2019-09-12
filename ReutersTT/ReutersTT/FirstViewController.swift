@@ -11,7 +11,7 @@ import UIKit
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     private let myArray: NSArray = ["First","Second","Third"]
     private let sectionHeading = "first tab section heading"
-    private var myTableView: UITableView!
+    private var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +39,15 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath as IndexPath)
-        cell.textLabel!.text = "\(myArray[indexPath.row])"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "firstTabTVCell")  as! FirstTabTVCell
+        cell.leftLabelTitle.text = "\(myArray[indexPath.row])"
+        cell.rightLabelTitle.text = "\(myArray[indexPath.row])"
+        
+        // TODO: fix it, show separator for last cell
+        if (indexPath.row == myArray.count-2) {
+            cell.separatorInset = UIEdgeInsets.init(top: 0.0, left: 25.0, bottom: 0.0, right: 25.0)
+        }
+        
         return cell
     }
     
@@ -50,16 +57,16 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let displayWidth: CGFloat = self.view.frame.width
         let displayHeight: CGFloat = self.view.frame.height
     
-        myTableView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight), style: .grouped)
+        tableView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight), style: .grouped)
     
-        myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
-        myTableView.dataSource = self
-        myTableView.delegate = self
+        tableView.register(FirstTabTVCell.self, forCellReuseIdentifier: "firstTabTVCell")
+        tableView.dataSource = self
+        tableView.delegate = self
         
-        myTableView.isScrollEnabled = false
-        myTableView.allowsSelection = false
+        tableView.isScrollEnabled = false
+        tableView.allowsSelection = false
         
-        self.view.addSubview(myTableView)
+        self.view.addSubview(tableView)
     }
 }
 
