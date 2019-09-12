@@ -16,6 +16,7 @@ class SecondTabTVCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = UIColor.black
         label.textAlignment = .left
+        label.font = UIFont.systemFont(ofSize: 16)
         
         return label
     }()
@@ -24,8 +25,9 @@ class SecondTabTVCell: UITableViewCell {
         var label = UILabel()
         
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor.darkGray
+        label.textColor = UIColor.lightGray
         label.textAlignment = .left
+        label.font = UIFont.systemFont(ofSize: 14)
         
         return label
     }()
@@ -38,15 +40,11 @@ class SecondTabTVCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
-        // Calculate exact center Y position and apply the same value for other paddings
-        // Considering leftLabelTitle.font.pointSize == rightLabelTitle.font.pointSize
-//        let spaceConstant = CGFloat(Int(self.frame.size.height - leftLabelTitle.font.pointSize) / 2)
-        
-        mainTitle.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
+        mainTitle.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 13).isActive = true
         mainTitle.topAnchor.constraint(equalTo: self.topAnchor, constant: 5).isActive = true
         
-        descriptionTitle.leftAnchor.constraint(equalTo: mainTitle.leftAnchor).isActive = true
-        descriptionTitle.topAnchor.constraint(equalTo: mainTitle.bottomAnchor, constant: 5).isActive = true
+        descriptionTitle.leftAnchor.constraint(equalTo: mainTitle.leftAnchor, constant: 1).isActive = true
+        descriptionTitle.topAnchor.constraint(equalTo: mainTitle.bottomAnchor, constant: 1).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {

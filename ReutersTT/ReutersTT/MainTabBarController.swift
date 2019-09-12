@@ -27,7 +27,6 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         self.viewControllers = viewControllerList.map { UINavigationController(rootViewController: $0) }
     }
     
-    //Delegate methods
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         print("Should select viewController: \(viewController.title ?? "") ?")
         
