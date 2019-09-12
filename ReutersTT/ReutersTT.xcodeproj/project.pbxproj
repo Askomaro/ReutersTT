@@ -17,6 +17,7 @@
 		D07343122328F07B0080D83E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07343112328F07B0080D83E /* MainTabBarController.swift */; };
 		D0734315232903050080D83E /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0734314232903050080D83E /* UserInfoModel.swift */; };
 		D073431723292AD00080D83E /* FirstTabTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073431623292AD00080D83E /* FirstTabTVCell.swift */; };
+		D0734319232A68210080D83E /* SecondTabTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0734318232A68210080D83E /* SecondTabTVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D07343112328F07B0080D83E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		D0734314232903050080D83E /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfoModel.swift; path = Models/UserInfoModel.swift; sourceTree = "<group>"; };
 		D073431623292AD00080D83E /* FirstTabTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabTVCell.swift; sourceTree = "<group>"; };
+		D0734318232A68210080D83E /* SecondTabTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				D07342FB2328DBC20080D83E /* Info.plist */,
 				D0734314232903050080D83E /* UserInfoModel.swift */,
 				D073431623292AD00080D83E /* FirstTabTVCell.swift */,
+				D0734318232A68210080D83E /* SecondTabTVCell.swift */,
 			);
 			path = ReutersTT;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0734319232A68210080D83E /* SecondTabTVCell.swift in Sources */,
 				D073431723292AD00080D83E /* FirstTabTVCell.swift in Sources */,
 				D07342F22328DBBE0080D83E /* SecondViewController.swift in Sources */,
 				D07342EE2328DBBE0080D83E /* AppDelegate.swift in Sources */,

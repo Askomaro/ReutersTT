@@ -16,10 +16,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        
-        view.backgroundColor = UIColor.lightGray
-        self.title = "Tab 1"
+        setUI()
         
         addTableView()
     }
@@ -27,12 +24,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionHeading
     }
-    
-    // TODO: Delete it as it's unneeded
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("Num: \(indexPath.row)")
-//        print("Value: \(myArray[indexPath.row])")
-//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myArray.count
@@ -49,6 +40,13 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         
         return cell
+    }
+    
+    private func setUI(){
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        view.backgroundColor = UIColor.lightGray
+        self.title = "Tab 1"
     }
     
     private func addTableView(){
