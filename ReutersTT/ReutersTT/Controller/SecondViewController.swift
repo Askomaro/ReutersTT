@@ -12,7 +12,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     private let segmentedItems = ["Sub Tab 1", "Sub Tab 2"]
     private let firstTableItems: NSArray = ["One","Two","Three"]
     private let secondTableItems: NSArray = ["Uno","Dos","Tres"]
-    private let sectionHeading = "first sub tabfirst section heading"
+    private let sectionHeading = "first sub tab first section heading"
     private var barHeight: CGFloat = 0.0
     
     private var tableView: UITableView!
@@ -55,10 +55,6 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionHeading
     }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return UITableView.automaticDimension
-//    }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 130

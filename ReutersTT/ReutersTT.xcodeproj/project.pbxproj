@@ -43,7 +43,7 @@
 		D07343042328DBC20080D83E /* ReutersTTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReutersTTTests.swift; sourceTree = "<group>"; };
 		D07343062328DBC20080D83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D07343112328F07B0080D83E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		D0734314232903050080D83E /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfoModel.swift; path = Models/UserInfoModel.swift; sourceTree = "<group>"; };
+		D0734314232903050080D83E /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
 		D073431623292AD00080D83E /* FirstTabTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabTVCell.swift; sourceTree = "<group>"; };
 		D0734318232A68210080D83E /* SecondTabTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,17 +87,12 @@
 		D07342EC2328DBBE0080D83E /* ReutersTT */ = {
 			isa = PBXGroup;
 			children = (
+				D073431C232B75C50080D83E /* Controller */,
+				D073431B232B75BB0080D83E /* View */,
+				D073431A232B75A70080D83E /* Model */,
 				D07342ED2328DBBE0080D83E /* AppDelegate.swift */,
-				D07342EF2328DBBE0080D83E /* FirstViewController.swift */,
-				D07342F12328DBBE0080D83E /* SecondViewController.swift */,
-				D07343112328F07B0080D83E /* MainTabBarController.swift */,
-				D07342F32328DBBE0080D83E /* Main.storyboard */,
-				D07342F62328DBC20080D83E /* Assets.xcassets */,
-				D07342F82328DBC20080D83E /* LaunchScreen.storyboard */,
+				D073431D232B76290080D83E /* Supporting files */,
 				D07342FB2328DBC20080D83E /* Info.plist */,
-				D0734314232903050080D83E /* UserInfoModel.swift */,
-				D073431623292AD00080D83E /* FirstTabTVCell.swift */,
-				D0734318232A68210080D83E /* SecondTabTVCell.swift */,
 			);
 			path = ReutersTT;
 			sourceTree = "<group>";
@@ -109,6 +104,43 @@
 				D07343062328DBC20080D83E /* Info.plist */,
 			);
 			path = ReutersTTTests;
+			sourceTree = "<group>";
+		};
+		D073431A232B75A70080D83E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0734314232903050080D83E /* UserInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D073431B232B75BB0080D83E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D073431623292AD00080D83E /* FirstTabTVCell.swift */,
+				D0734318232A68210080D83E /* SecondTabTVCell.swift */,
+				D07342F32328DBBE0080D83E /* Main.storyboard */,
+				D07342F82328DBC20080D83E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D073431C232B75C50080D83E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D07343112328F07B0080D83E /* MainTabBarController.swift */,
+				D07342EF2328DBBE0080D83E /* FirstViewController.swift */,
+				D07342F12328DBBE0080D83E /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D073431D232B76290080D83E /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				D07342F62328DBC20080D83E /* Assets.xcassets */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
